@@ -1,0 +1,6 @@
+ODEs
+
+d_PGA_dt of PGA = 2.0*Vc + 1.5*Vc*phi - Vr in umol/m^2/s
+d_RuBP_dt of RuBP = (1.0 + phi)/(2.0 + 1.5*phi)*Vr - Vc*(1.0 + phi) in umol/m^2/s
+d_fRB_dt of fRB = ifelse(fRBss > fRB, (fRBss - fRB)*Krca*RCA*fRCA, (fRBss - fRB)*KdRB) in 1/s
+d_fP_dt of fP = ifelse(fqEss > fP, (fqEss - fP)*KiqEp, (fqEss - fP)*KdqEp) in 1/s
